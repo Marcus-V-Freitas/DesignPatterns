@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{35D29759-C569-4AB0-BED3-6A2D0AFFCF2D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>PadroesProjeto</RootNamespace>
+    <AssemblyName>PadroesProjeto</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.DebuggerVisualizers, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SimpleInjector, Version=4.8.1.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.4.8.1\lib\net45\SimpleInjector.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector.Integration.Web, Version=4.8.1.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.Integration.Web.4.8.1\lib\net40\SimpleInjector.Integration.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector.Integration.Web.Mvc, Version=4.8.1.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.Integration.Web.Mvc.4.8.1\lib\net40\SimpleInjector.Integration.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.3.0.20105.1\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.1.0.20105.408\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.1.0.20105.408\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Estruturas\ActionFunc\ActionTeste.cs" />
+    <Compile Include="Estruturas\ActionFunc\FuncTeste.cs" />
+    <Compile Include="Estruturas\Arquivos\Arquivos.cs" />
+    <Compile Include="Estruturas\Delegates\Delegates.cs" />
+    <Compile Include="Estruturas\DriveInfoTeste\DriveInfoTeste.cs" />
+    <Compile Include="Estruturas\MetodoExtensao\MetodoExtensao.cs" />
+    <Compile Include="Estruturas\PassagemParametros\Passagem.cs" />
+    <Compile Include="Estruturas\Testes\Conta.cs" />
+    <Compile Include="Estruturas\WriterReader\WriterReader.cs" />
+    <Compile Include="Estruturas\ZipFileTeste\ZipFileTeste.cs" />
+    <Compile Include="Facade.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\ChainOfResponsability\Aprovador.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\ChainOfResponsability\Gerente.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\ChainOfResponsability\Vendedor.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Command\Command.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Command\ConcreteCommand.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Command\FormularioServer.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Command\Server.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Iterator\ConcreteIterator.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Iterator\Empresa.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Iterator\Funcionario.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Iterator\Iterator.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Iterator\Subject.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Mediator\AbstractMediator.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Mediator\UsuarioCliente.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Mediator\Colleague.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Mediator\ConcreteMediator.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Mediator\Suporte.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Memento\CareTaker.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Memento\Memento.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Memento\Pessoa.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\State\AbstractConnection.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\State\CloseConnection.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\State\ContextState.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\State\OpenConnection.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Strategy\AbstractStrategy.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Strategy\ContextStrategy.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Strategy\StrategyReverse.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Strategy\StrategySort.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\TemplateMethod\AbtractTemplate.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\TemplateMethod\DocumentoTexto.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Visitor\AbstractVisitor.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Visitor\ConcreteElement1.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Visitor\ConcreteElement2.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Visitor\ConcreteVisitor.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Visitor\AbstractElement.cs" />
+    <Compile Include="PadroesProjeto\Comportamental\Visitor\ObjectGuard.cs" />
+    <Compile Include="PadroesProjeto\Criacional\AbstractFactory\AbstractFactory.cs" />
+    <Compile Include="PadroesProjeto\Criacional\AbstractFactory\Command.cs" />
+    <Compile Include="PadroesProjeto\Criacional\AbstractFactory\Connection.cs" />
+    <Compile Include="PadroesProjeto\Criacional\AbstractFactory\SqlCommand.cs" />
+    <Compile Include="PadroesProjeto\Criacional\AbstractFactory\SqlConnection.cs" />
+    <Compile Include="PadroesProjeto\Criacional\AbstractFactory\SqlFactory.cs" />
+    <Compile Include="PadroesProjeto\Criacional\Builder\Builder.cs" />
+    <Compile Include="PadroesProjeto\Criacional\Builder\CarroBuilder.cs" />
+    <Compile Include="PadroesProjeto\Criacional\Builder\Diretor.cs" />
+    <Compile Include="PadroesProjeto\Criacional\Builder\Veiculo.cs" />
+    <Compile Include="PadroesProjeto\Criacional\FactoryMethod\AbstractFactoryMethod.cs" />
+    <Compile Include="PadroesProjeto\Criacional\FactoryMethod\Autenticacao.cs" />
+    <Compile Include="PadroesProjeto\Criacional\FactoryMethod\ConcreteGoogle.cs" />
+    <Compile Include="PadroesProjeto\Criacional\FactoryMethod\GoogleAutenticacao.cs" />
+    <Compile Include="PadroesProjeto\Criacional\Prototype\Item.cs" />
+    <Compile Include="PadroesProjeto\Criacional\Prototype\Livro.cs" />
+    <Compile Include="PadroesProjeto\Criacional\Singleton\ConexaoSin.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Adapter\Adaptee.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Adapter\Adapter.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Adapter\ContainerRepository.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Adapter\Target.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Bridger\Azul.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Bridger\Cor.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Bridger\Forma.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Bridger\Retangulo.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Composite\Button.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Composite\Component.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Composite\Formulario.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Composite\IComponent.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Decorator\Adicionais.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Decorator\Decorator.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Decorator\Pizza.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Decorator\PizzaQueijo.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Flyweight\Boss.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Flyweight\Character.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Flyweight\Default.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Flyweight\FactoryFlyweight.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Proxy\CalcProxy.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Proxy\CalcSoma.cs" />
+    <Compile Include="PadroesProjeto\Estrutural\Proxy\ICalc.cs" />
+    <Compile Include="PadroesProjeto\Outros\ObjectPool.cs" />
+    <Compile Include="PadroesProjeto\Outros\SqlPool.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
